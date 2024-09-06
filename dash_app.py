@@ -16,6 +16,7 @@ fonts = 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;
 external_stylesheets = [fonts, dbc.themes.FLATLY, dbc.icons.BOOTSTRAP]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 app.css.config.serve_locally = True
+server = app.server
 
 # Load CSV files
 def load_csv_files(folder, flist):
