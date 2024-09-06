@@ -1,0 +1,477 @@
+
+body {
+    background-color: #708090;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background-color: #010103;
+    /* background-color: #708090; */
+    /* border: 1px solid #cccccc; */
+    /* border-radius: 10px; */
+}
+
+br.navbar-space {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 30px; /* change this to whatever height you want it */
+}
+
+.sidebar-nav {
+    padding-right: 5px;
+}
+
+a.nav-link {
+    color: #ffffff;  /* Sidebar link color */
+}
+
+a.nav-link.active {
+    background-color: aquamarine !important;  /* Active link style */
+    color: black !important;
+    transition: all 1s ease;
+}
+
+i {
+    font-weight: bold;
+}
+
+.vertical-line {
+    /* height: 100px; */
+    margin: 0px;
+    border-right: 0.5px solid rgb(71, 71, 71);
+}
+
+h1 {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 35px;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+h1.brand {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 25px;
+    margin: 15px;
+}
+
+h2 {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 20px;
+    margin: 15px;
+    /* margin-top: 20px; */
+    /* color: var(--bs-info); */
+}
+
+h3 {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 35px;
+    margin: 15px;
+    margin-bottom: 0px;
+    /* margin-top: 10px; */
+}
+
+h3.balance-display {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 40px;
+    margin: 15px;
+    /* margin-bottom: 0px; */
+    /* margin-top: 10px; */
+}
+
+h3.pnl-display {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 30px;
+    margin: 15px;
+    /* margin-bottom: 0px; */
+    /* margin-top: 10px; */
+}
+
+h3.pill-text {
+    font-family: "Poppins";
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #aaa;
+    border: none;
+    color: #aaa;  /* Gray text for unselected buttons */
+    border-radius: 50px;  /* Round the corners */
+}
+
+h3.fee-display {
+    font-family: "Poppins"; 
+    color: #ffffff; 
+    font-size: 30px;
+    margin: 15px;
+    /* margin-top: 10px; */
+}
+
+h4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: "Poppins";
+    font-size: 14px !important;
+    color: #ffffff;
+}
+
+/* h5 {
+    font-family: "Poppins";
+    font-size: 14px !important;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 1px;
+    background-color: #ff0040;
+    padding: 5px;
+    margin: 0px;
+    opacity: 0.8;
+} */
+
+h5 {
+    font-family: "Poppins";
+    font-size: 18px !important;
+    margin-left: 15px;
+
+}
+
+h5.pill-text {
+    font-family: "Arial";
+    font-size: 15px !important;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    background-color: #aaa;
+    border: none;
+    color: #2b2b3a;  /* Gray text for unselected buttons */
+    border-radius: 50px;  /* Round the corners */
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+}
+
+h6.header1 {
+    font-family: "Poppins";
+    color: #ffffff;
+    font-size: 18px;
+    margin: 15px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+h6.header2 {
+    font-family: "Poppins";
+    color: #ffffff;
+    font-size: 16px;
+    margin: 15px;
+    text-align: justify;
+}
+
+p {
+    font-family: "Poppins";
+    color: #ffffff;
+    font-size: 16px;
+    margin: 15px;
+    text-align: justify;
+}
+
+p.pnl-display {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+
+
+
+/* Dropdowns */
+
+
+.customDropdown {
+    font-size: 16px;
+    font-family: "Poppins";
+    padding-left: 1px;
+}
+
+.customDropdown .Select-control {
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #676768;
+    border-radius: 3px;
+    color: var(--bs-info) !important;
+}
+
+.customDropdown .Select-value-label,
+.customDropdown .Select-placeholder {    
+    color: var(--bs-info) !important;
+}
+
+.customDropdown .Select-arrow {
+    border-color: #cccccc transparent transparent;
+}
+
+.customDropdown.is-open .Select-arrow {
+    border-color: transparent transparent #cccccc;
+}
+
+.customDropdown .Select-clear {
+    color: var(--bs-info);
+    font-size: 22px;
+}
+
+.customDropdown.is-focused:not(.is-open) > .Select-control {
+    border: 2px solid color-mix(in srgb, var(--bs-info), #010103 50%) !important;
+}
+
+.customDropdown.is-focused:not(.is-open) .Select-arrow {
+    border-color: var(--bs-info) transparent transparent;
+}
+
+.customDropdown .Select-menu-outer {
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: #010103;
+    border: 1px solid #676768;
+    color: var(--bs-light);
+}
+
+.customDropdown .VirtualizedSelectFocusedOption {
+    background-color: color-mix(in srgb, var(--bs-light), #010103 7%);
+    border-radius: 3px;
+    color: #010103;
+}
+
+/* Radio-buttons */
+
+.form-check {
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    padding-left: 0;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Container for the radio items, makes sure the buttons are displayed inline */
+.time-selector {
+    height: 100%;
+    display: inline-flex;
+    border-radius: 50px;  /* Rounded pill shape */
+    background-color: #2c2c2c;  /* Dark background for the container */
+    gap: 0px;
+}
+
+/* Style for the individual buttons (unselected) */
+.time-btn {
+    font-family: "Poppins";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #aaa;  /* Gray text for unselected buttons */
+    padding: 10px 25px;
+    border-radius: 50px;  /* Round the corners */
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth transitions */
+}
+
+/* Style for the selected button */
+.btn-selected {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn-check:checked + .btn-selected {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    transition: all 1s ease;  /* Smooth transitions */
+}
+
+.btn-check {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+}
+
+/* Fixes layout when using 'btn-group' from Bootstrap */
+.btn-group .btn-check {
+    display: none;  /* Hide the default radio input */
+}
+
+
+
+
+/* .btn.btn-outline-light {
+    font-family: "Poppins";
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: gray;
+    color: gray;
+}
+
+.btn.btn-outline-light:hover {
+    color: aquamarine;
+    border-color: aquamarine;
+    background-color: transparent;
+}
+
+.btn-check:checked + .btn.btn-outline-light {
+    color: aquamarine;
+    border-color: aquamarine;
+    background-color: transparent;
+    outline: none;
+} */
+
+
+
+/* Single button */
+
+.btn.btn-info {
+    width: 100%;
+    height: 38px;
+    margin: 1px;
+    padding: 6px;
+    font-family: "Poppins";
+    border-radius: 3px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.btn.btn-info:active,
+.btn.btn-info:focus {
+    background-color: var(--bs-info);
+}
+
+.btn.btn-info:hover {
+    background-color: color-mix(in srgb, var(--bs-info), #010103 7%);
+}
+
+
+/* Define a keyframe animation for popping out */
+@keyframes pop-out {
+    0% {
+        opacity: 0;
+        /* transform: scale(0.8); */
+        margin-top: 2%;
+    }
+    100% {
+        opacity: 1;
+        /* transform: scale(1); */
+        margin-top: 0%;
+    }
+}
+
+/* Apply the pop-out animation to the graph container */
+/* .pop-out {
+    animation: pop-out 0.5s ease-out;
+    animation-delay: 1s;
+} */
+
+/* Custom styles for the PnL card */
+.graph-card {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #161618;  /* Custom background color */
+    /* border: 1px solid #63759F; */
+    border: 1px solid transparent; 
+    border-radius: 8px;  /* Optional: border rounding */
+    background-image: linear-gradient(#161618, #2b2b3a), linear-gradient(0.4turn, #46627D 10%, #786396 20% 40%, #2b2b3a 50% 88%, #454546 98%);
+    /* transparent 50% 88%, #454546 98%); */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: pop-out 0.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* After the animation starts, make the card visible */
+.graph-card.pop-in {
+    opacity: 1;
+}
+
+/* Row container div style */
+.row-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row-div2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: min-content;
+}
+
+.row-div-brand {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Custom styles for the info card */
+.info-card {
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: transparent;  /* Custom background color */
+    /* border: 1px solid #63759F; */
+    /* border: 0px solid #3C4749 #ff8fa2;  */
+    border: none;
+    border-radius: 8px;  /* Optional: border rounding */
+    /* background-image: linear-gradient(#161618, #161618), linear-gradient(0.4turn, #46627D 10%, #786396 20% 40%, transparent 50% 88%, #454546 98%);
+    background-origin: border-box;
+    background-clip: content-box, border-box; */
+    animation: pop-out 0.5s ease-out forwards;
+    animation-delay: 1s;
+
+}
+
+/* After the animation starts, make the card visible */
+.info-card.pop-in {
+    opacity: 1;
+}
+
+
+.blue-gray-card {
+    opacity: 0;
+    background-color: #2b2b3a;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 3px 3px 3px #2b2b3a; */
+    border-radius: 0px;
+    animation: pop-out 0.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* After the animation starts, make the card visible */
+.blue-gray-card.pop-in {
+    opacity: 1;
+}

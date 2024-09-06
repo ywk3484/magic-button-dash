@@ -1,0 +1,42 @@
+environment: "mock"  # or "live"
+
+ohlcv_data:
+  fname: "symbol_ohlcv_data.csv"
+  1d: 
+    dir: "/data/NewBinanceData/1d_ws"
+    mock_save_dir: "/data/NewBinanceData/1d_ws/mock"
+  1m: 
+    dir: "/data/NewBinanceData/1m_ws"
+    mock_save_dir: "/data/NewBinanceData/1m_ws/mock"
+
+trading_fee:
+  binance:
+    futures:
+      market: 0.045
+      limit: 0.018
+  
+mock:
+  # start_date: "2022-01-01"
+  # end_date: "2022-09-26"
+  start_date: "2024-08-09"
+  end_date: "2024-08-20"
+  data_load_start_date: "2024-01-01"
+  candle_close: False
+  interval: "1d"
+
+live:
+  candle_close: False
+
+data:
+  stock:
+    hantu:
+      fname: "symbol_ohlcv_data.csv"
+      1d:
+        dir: "/data/HantuData/1d"
+        mock_save_dir: "/data/HantuData/mock/1d"
+
+web:
+  strategy:
+    ftypes: ["entry_info", "position", "realized_pnl", "trades", "unrealized_pnl", "balance_cash"]
+    dir: "/home/yong_woo/PycharmProjects/Trader_redesign_v2/logs/strategy/"
+    exclude_folders: ["_BACKUP_MOCK", "_BACKUP_LIVE"]
