@@ -45,7 +45,6 @@ config = load_config("strategy_modules/trade_configs.yaml")
 
 # Path to the folder containing CSV files
 STRATEGIES_FOLDER = config["web"]["strategy"]["dir"]
-DATA_FOLDER = "/home/yong_woo/PycharmProjects/Trader_redesign_v2/logs/strategy/SMACrossUTStrategy/"
 FILE_NAMES = config["web"]["strategy"]["ftypes"]
 OHLCV_DIR = config["ohlcv_data"]["1d"]["dir"]
 BRAND_ICON_DIR = "assets/icons/gems.png"

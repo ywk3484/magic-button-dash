@@ -72,16 +72,6 @@ def load_ohlcv_data(available_symbols):
     
     return ohlcv_multidf
 
-# Load all the data once
-dataframes = load_csv_files(DATA_FOLDER, FILE_NAMES)
-available_data_types = list(dataframes.keys())
-
-# Extract available symbols (columns) from any dataframe
-available_symbols = dataframes["position"].columns.tolist()  # Symbols are columns
-
-# Load ohlcv data
-ohlcv_multidf = load_ohlcv_data(available_symbols)
-
 def get_total_pnl_data(dataframes):
     u_pnl = dataframes["unrealized_pnl"].sum(axis=1)
     r_pnl = dataframes["realized_pnl"].cumsum().sum(axis=1)

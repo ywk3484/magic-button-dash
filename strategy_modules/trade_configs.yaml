@@ -3,11 +3,7 @@ environment: "mock"  # or "live"
 ohlcv_data:
   fname: "symbol_ohlcv_data.csv"
   1d: 
-    dir: "/data/NewBinanceData/1d_ws"
-    mock_save_dir: "/data/NewBinanceData/1d_ws/mock"
-  1m: 
-    dir: "/data/NewBinanceData/1m_ws"
-    mock_save_dir: "/data/NewBinanceData/1m_ws/mock"
+    dir: "data/1d_ws"
 
 trading_fee:
   binance:
@@ -38,5 +34,5 @@ data:
 web:
   strategy:
     ftypes: ["entry_info", "position", "realized_pnl", "trades", "unrealized_pnl", "balance_cash"]
-    dir: "/home/yong_woo/PycharmProjects/Trader_redesign_v2/logs/strategy/"
+    dir: "logs/strategy/"
     exclude_folders: ["_BACKUP_MOCK", "_BACKUP_LIVE"]
